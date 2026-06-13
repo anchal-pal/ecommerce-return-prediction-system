@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Return Prediction System</title>
+</head>
+
+<body>
+
+<h1>E-Commerce Return Prediction</h1>
+
+<form action="/predict" method="post">
+
+<input name="Product_Category" placeholder="Electronics">
+
+<input name="Product_Price" placeholder="Price">
+
+<input name="Order_Quantity" placeholder="Quantity">
+
+<input name="User_Age" placeholder="Age">
+
+<input name="User_Gender" placeholder="Male/Female">
+
+<input name="User_Location" placeholder="City1">
+
+<input name="Payment_Method" placeholder="Credit Card">
+
+<input name="Shipping_Method" placeholder="Standard">
+
+<input name="Discount_Applied" placeholder="Discount">
+
+<button type="submit">Predict</button>
+
+</form>
+
+<h2>
+{{ prediction_text }}
+</h2>
+
+</body>
+</html>
